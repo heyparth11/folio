@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folio</title>
+    <link rel="stylesheet" href="./assets/libraries/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./assets/libraries/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- <div class="page-loading">
+        <div class="page-loading_inner">
+            <svg id="page-loading_circle" width="270" height="270" viewBox="0 0 270 270" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="136" cy="136" r="132" stroke="#B7AB98"></circle>
+            </svg>
+            <div class="page-loading_logo">
+                <img id="page-loading_logo" src="https://minhpham.design/assets/images/logo.gif" width="64px"
+                    height="64px" alt="logo">
+            </div>
+            <button id="js-page-loading_start" class="body-text page-loading_start">Start</button>
+            <span id="js-page-loading_text" class="page-loading_text"><b class="js-loading_text">100</b>%</span>
+        </div>
+    </div> -->
+    <!-- <div class="dot" style="--width:38px;"> </div> -->
+    <header>
+        <nav class="navbar navbar-expand bg-transparent first_nav">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"><svg width="46" height="46" viewBox="0 0 64 64" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="svg" viewbox_="0 0 NaN NaN">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M53.4123 56.0001C59.9131 50.12 64 41.602 64 32.1258C64 14.3832 49.6731 0 32 0C14.3269 0 0 14.3832 0 32.1258C0 41.2108 3.75642 49.4151 9.79504 55.2585L21.5957 13.0511L27.5053 25.8028H31.5H35.4947L41.4043 13.0511L53.4123 56.0001Z"
+                            fill="#B7AB98"></path>
+                        <ellipse cx="26.1333" cy="37.4132" rx="2.13333" ry="2.14172" fill="#B7AB98"></ellipse>
+                        <ellipse cx="37.1333" cy="37.4132" rx="2.13333" ry="2.14172" fill="#B7AB98"></ellipse>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar navbar-expand bg-transparent second_nav">
+            <div class="container">
+                <a class="navbar-brand" href="#"><svg width="50" height="50" viewBox="0 0 64 64" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="svg" viewbox_="0 0 NaN NaN">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M53.4123 56.0001C59.9131 50.12 64 41.602 64 32.1258C64 14.3832 49.6731 0 32 0C14.3269 0 0 14.3832 0 32.1258C0 41.2108 3.75642 49.4151 9.79504 55.2585L21.5957 13.0511L27.5053 25.8028H31.5H35.4947L41.4043 13.0511L53.4123 56.0001Z"
+                            fill="#B7AB98"></path>
+                        <ellipse cx="26.1333" cy="37.4132" rx="2.13333" ry="2.14172" fill="#B7AB98"></ellipse>
+                        <ellipse cx="37.1333" cy="37.4132" rx="2.13333" ry="2.14172" fill="#B7AB98"></ellipse>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+    <main>
+        <div class="layer primary_layer">
+            <section class="banner padding">
+                <div class="container">
+                    <div class="banner_content">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-8 col-12">
+                                <h6 class="text-center dot_expand sub_heading"><span>PARTH</span></h6>
+                                <h1 class="dot_expand split_text
+                                m-auto heading banner_heading text-uppercase text-center">
+                                    <div class="line heading-animation">Making</div>
+                                    <div class="line heading-animation"><strong> good </strong></div>
+                                    <div class="line heading-animation"><strong> shit </strong></div>
+                                    <div class="line heading-animation">since </div>
+                                    <div class="line heading-animation">2009</div>
+                                    <!-- <span>Lorem Ipsum is dummy text</span> -->
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about padding">
+                <div class="container-fluid">
+                    <div class="about_content">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 col-12 offset-lg-2 offset-sm-1">
+                                <h6 class="sub_heading dot_expand"><span>about me</span></h6>
+                                <h2 class="dot_expand">I'm a <strong>selectively skilled</strong> product designer with strong focus on producing high quality & impactful 
+                                    digital experience.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="what_i_do padding">
+                <div class="container-fluid p-sm-0">
+                    <div class="what_i_do_content">
+                        <h6 class="sub_heading dot_expand offset-lg-2 offset-sm-1"><span>what i do</span></h6>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">3D</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">3D</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">visual</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">visual</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">motion</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">motion</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">product</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">product</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">tutorial</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">tutorial</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about padding">
+                <div class="container-fluid">
+                    <div class="about_content">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 col-12 offset-lg-2 offset-sm-1">
+                                <h6 class="sub_heading dot_expand"><span>experience</span></h6>
+                                <h2 class="dot_expand">Over <strong>a decade</strong> of experience in interactive design and 
+                                    working with some of the most talented people in the 
+                                    business
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="what_i_do padding history-js">
+                <div class="container-fluid p-sm-0">
+                    <div class="what_i_do_content">
+                        <h6 class="sub_heading dot_expand offset-lg-2 offset-sm-1"><span>history</span></h6>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">3D</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">3D</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">visual</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">visual</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">motion</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">motion</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">product</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">product</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">tutorial</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">tutorial</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="layer cursor_layer" aria-hidden="true" style="--width:20px;--x:60%;--y:30%;">
+            <section class="banner padding">
+                <div class="container">
+                    <div class="banner_content">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-8 col-12">
+                                <h6 class="text-center dot_expand sub_heading"><span>PARTH</span></h6>
+                                <h1 class="dot_expand m-auto heading banner_heading text-uppercase text-center">
+                                    <!-- Lorem Ipsum is dummy text text -->
+                                    <div class="line heading-animation">Making</div>
+                                    <div class="line"><strong> good </strong></div>
+                                    <div class="line"><strong> shit </strong></div>
+                                    <div class="line">since </div>
+                                    <div class="line">2009</div>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about padding">
+                <div class="container-fluid">
+                    <div class="about_content">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 col-12 offset-lg-2 offset-sm-1">
+                                <h6 class="sub_heading dot_expand"><span>about me</span></h6>
+                                <h2 class="dot_expand">I'm a <strong>selectively skilled</strong> product designer with strong focus on producing high quality & impactful 
+                                    digital experience.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="what_i_do padding">
+                <div class="container-fluid p-sm-0">
+                    <div class="what_i_do_content">
+                        <h6 class="sub_heading offset-lg-2 offset-sm-1"><span class="dot_expand">what i do</span></h6>
+                        <div class="tech-head-wrap dot_shrink">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">3D</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">3D</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap dot_shrink">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">visual</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">visual</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap dot_shrink">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">motion</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">motion</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap dot_shrink">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">product</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">product</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap dot_shrink">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">tutorial</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">tutorial</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about padding">
+                <div class="container-fluid">
+                    <div class="about_content">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 col-12 offset-lg-2 offset-sm-1">
+                                <h6 class="sub_heading dot_expand"><span>experience</span></h6>
+                                <h2 class="dot_expand">Over <strong>a decade</strong> of experience in interactive design and 
+                                    working with some of the most talented people in the 
+                                    business
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="what_i_do padding history-js">
+                <div class="container-fluid p-sm-0">
+                    <div class="what_i_do_content">
+                        <h6 class="sub_heading dot_expand offset-lg-2 offset-sm-1"><span>history</span></h6>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">3D</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">3D</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">visual</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">visual</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">motion</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">motion</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">product</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">product</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-head-wrap">
+                            <div class="tech-head">
+                                <div class="tech-head_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="h2">tutorial</h2>
+                                </div>
+                            </div>
+                            <div class="tech-head-mask">
+                                <div class="tech-head-mask_inner offset-lg-2 offset-sm-1">
+                                    <h2 class="is-dark h2">tutorial</h2>
+                                    <p class="p is-dark">I can produce anything that my 16" can render.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    
+    <footer>
+
+    </footer>
+
+    <script src="./assets/libraries/jquery/jquery.min.js"></script>
+    <script src="./assets/libraries/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- <script src="https://l6skym3r1w7svyff-62881726641.shopifypreview.com/cdn/shop/t/13/assets/init_ScrollTrigger.js"></script> -->
+    <!-- <script src="./assets/js/app.bundle.js"></script> -->
+    <!-- <script src="./assets/js/all.js"></script> -->
+    <!-- <script src="./assets/js/ScrollTrigger.js"></script> -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
