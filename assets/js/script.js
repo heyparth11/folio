@@ -95,7 +95,7 @@ window.addEventListener("mousemove", e => {
 
 $('.dot_expand').on('mouseenter', () => {
     gsap.to(".cursor_layer", {
-        "--width": 200,  // Expands the mask
+        "--width": 250,  // Expands the mask
         duration: 0.4,
         ease: "power2.inOut"
     });
@@ -218,4 +218,17 @@ $('.padding.history-js .tech-head-wrap').on('mouseenter', function(){
 })
 $('.padding.history-js .tech-head-wrap').on('mouseleave', function(){
   $('.primary_layer .padding.history-js .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
+})
+
+$('.padding:not(.footer-js) .tech-head-wrap').on('mouseenter', function(){
+    $('.primary_layer .padding:not(.footer-js) .tech-head-wrap').eq($(this).index() - 1).addClass('is-hover');
+})
+$('.padding:not(.footer-js) .tech-head-wrap').on('mouseleave', function(){
+    $('.primary_layer .padding:not(.footer-js) .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
+})
+$('.padding.footer-js .tech-head-wrap').on('mouseenter', function(){
+    $('.primary_layer .padding.footer-js .tech-head-wrap').eq($(this).index() - 1).addClass('is-hover');
+})
+$('.padding.footer-js .tech-head-wrap').on('mouseleave', function(){
+    $('.primary_layer .padding.footer-js .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
 })

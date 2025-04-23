@@ -102,7 +102,7 @@ h6 {
     background-color: var(--secondary-color);
     --ease-val: 0.2s;
     transition: top var(--ease-val) ease-out, left var(--ease-val) ease-out, width var(--ease-val) ease-out,
-        height var(--ease-val) ease-out, background-color var(--ease-val) ease-out, transform var(--ease-val) ease-out;
+    height var(--ease-val) ease-out, background-color var(--ease-val) ease-out, transform var(--ease-val) ease-out;
     position: fixed;
     pointer-events: none;
     left: var(--x);
@@ -140,8 +140,8 @@ h6 {
     mask-image: url(https://minhpham.design/assets/icons/test-mask.svg);
     -webkit-mask-origin: content-box;
     mask-origin: content-box;
-    -webkit-mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
-    mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
+    -webkit-mask-position: calc(var(--x) - var(--size) / 2) calc(var(--y) - var(--size) / 2), center;
+    mask-position: calc(var(--x) - var(--size) / 2) calc(var(--y) - var(--size) / 2), center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: var(--size), contain;
@@ -212,7 +212,7 @@ h6 {
     display: flex;
     height: 2.875rem;
     justify-content: center;
-    left: calc((var(--size-circle) - var(--size-w))/2);
+    left: calc((var(--size-circle) - var(--size-w)) / 2);
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -301,10 +301,19 @@ h2 {
     line-height: 100%;
 }
 
-h2>div {
+.history .h3 {
+    font-size: 3rem;
+}
+
+.history .tech-head,
+.history .tech-head-mask {
+    padding: 2.5em 0;
+}
+
+h2 > div {
     background: linear-gradient(to right,
-            rgb(255, 255, 255) 50%,
-            rgb(37, 37, 37) 50%);
+    rgb(255, 255, 255) 50%,
+    rgb(37, 37, 37) 50%);
     background-size: 200% 100%;
     background-position-x: 100%;
     color: transparent;
@@ -317,7 +326,20 @@ h2>div {
     font-size: 10vw;
 }
 
+footer a {
+    color: rgb(var(--primary-color));
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 
 /* -========- */
@@ -353,18 +375,22 @@ strong {
 .is-dark {
     color: var(--cursor-color);
 }
+
 .tech-head-wrap {
     position: relative;
     border-top: 1px solid hsla(37, 18%, 66%, .15);
 }
-.tech-head-wrap:last-child{
+
+.tech-head-wrap:last-child {
     border-bottom: 1px solid hsla(37, 18%, 66%, .15);
 }
+
 .tech-head-mask_inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .tech-head-mask {
     position: absolute;
     top: 0;
@@ -388,10 +414,12 @@ strong {
     transition: clip-path .6s cubic-bezier(.165, .84, .44, 1);
     transition: clip-path .6s cubic-bezier(.165, .84, .44, 1), -webkit-clip-path .6s cubic-bezier(.165, .84, .44, 1);
 }
+
 .tech-head-wrap .p {
     text-align: center;
     padding-right: 5vw;
 }
+
 .tech-head-wrap .h2 {
     text-transform: uppercase;
     font-size: calc(6vw + 20px);
@@ -400,4 +428,24 @@ strong {
     line-height: 1;
     letter-spacing: -2px;
     margin: 0;
+}
+
+
+footer .tech-head-wrap:last-child,
+    footer .tech-head-wrap{
+    border:none;
+}
+.footer .tech-head-wrap{
+    width: 100%;
+}
+.footer .tech-head-wrap span {
+    font-size: 16px;
+}
+.sticky-links {
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    left: 7rem;
+    flex-direction: column;
+    gap: 30px;
 }
