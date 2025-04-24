@@ -430,17 +430,19 @@ strong {
     margin: 0;
 }
 
-
 footer .tech-head-wrap:last-child,
-    footer .tech-head-wrap{
-    border:none;
+footer .tech-head-wrap {
+    border: none;
 }
-.footer .tech-head-wrap{
+
+.footer .tech-head-wrap {
     width: 100%;
 }
+
 .footer .tech-head-wrap span {
     font-size: 16px;
 }
+
 .sticky-links {
     display: flex;
     position: fixed;
@@ -448,4 +450,19 @@ footer .tech-head-wrap:last-child,
     left: 7rem;
     flex-direction: column;
     gap: 30px;
+}
+.footer ul{
+    width: 50%;
+}
+
+.modal-overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    align-items: center;
+    padding: 20px;
+    background: var(--bs-black);
+    text-align: center;
 }

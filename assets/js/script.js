@@ -1,4 +1,10 @@
 jQuery(document).ready(function($){
+
+    if(window.innerWidth < 1280){
+        $('.modal-overlay').css('display', 'flex');
+        $('body').html($('.modal-wrapper').html());
+    }
+
     const dot = $('.heading_mask.masked-image');
     
     let mouseX = 0;
@@ -220,15 +226,15 @@ $('.padding.history-js .tech-head-wrap').on('mouseleave', function(){
   $('.primary_layer .padding.history-js .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
 })
 
-$('.padding:not(.footer-js) .tech-head-wrap').on('mouseenter', function(){
-    $('.primary_layer .padding:not(.footer-js) .tech-head-wrap').eq($(this).index() - 1).addClass('is-hover');
-})
-$('.padding:not(.footer-js) .tech-head-wrap').on('mouseleave', function(){
-    $('.primary_layer .padding:not(.footer-js) .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
-})
+// $('.padding:not(.footer-js) .tech-head-wrap').on('mouseenter', function(){
+//     $('.primary_layer .padding:not(.footer-js) .tech-head-wrap').eq($(this).index() - 1).addClass('is-hover');
+// })
+// $('.padding:not(.footer-js) .tech-head-wrap').on('mouseleave', function(){
+//     $('.primary_layer .padding:not(.footer-js) .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
+// })
 $('.padding.footer-js .tech-head-wrap').on('mouseenter', function(){
-    $('.primary_layer .padding.footer-js .tech-head-wrap').eq($(this).index() - 1).addClass('is-hover');
+    $('.primary_layer .padding.footer-js .tech-head-wrap').eq($(this).parent().parent().index()).addClass('is-hover');
 })
 $('.padding.footer-js .tech-head-wrap').on('mouseleave', function(){
-    $('.primary_layer .padding.footer-js .tech-head-wrap').eq($(this).index() - 1).removeClass('is-hover');
+    $('.primary_layer .padding.footer-js .tech-head-wrap').eq($(this).parent().parent().index()).removeClass('is-hover');
 })
